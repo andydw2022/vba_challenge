@@ -154,13 +154,10 @@ ws.Range("S2").Value = HighPercentInc
 ws.Range("S3").Value = LowPercentInc
 ws.Range("S4").Value = HighStockVol
 
-
+'These EXCEL functions were used to help with verification of my algorthims, hence they are now commented out
 'ws.Range("R2").Value = "" 'Application.WorksheetFunction.Max(ws.Range("N:N"))
 'ws.Range("R3").Value = "" 'Application.WorksheetFunction.Min(ws.Range("N:N"))
 'ws.Range("R4").Value = "" 'Application.WorksheetFunction.Max(ws.Range("O:O"))
-'Location = ws.Range("N:N").Find(Application.WorksheetFunction.Max(Range("N:N"))).Address
-'MsgBox Location
-'ws.Range("S2").Value = Split(Str(Location), "$")
 Next ws
 End Sub
 
